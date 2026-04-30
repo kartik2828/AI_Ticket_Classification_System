@@ -1,37 +1,31 @@
 # ── UI ──────────────────────────────────────────────────────────────────────
 streamlit==1.35.0
 
-# ── Data handling ────────────────────────────────────────────────────────────
+# ── Data ────────────────────────────────────────────────────────────────────
 pandas==2.2.2
+numpy==1.26.4
 openpyxl==3.1.2
 pyxlsb==1.0.10
 xlrd==2.0.1
 
-# ── NLP / Text Processing ────────────────────────────────────────────────────
+# ── NLP ─────────────────────────────────────────────────────────────────────
 nltk==3.8.1
 sentence-transformers==3.0.1
-transformers==4.41.2
 torch==2.3.0
+transformers==4.41.2
 
-# ── Dimensionality Reduction & Clustering ───────────────────────────────────
+# ── Clustering / Dimensionality Reduction ───────────────────────────────────
 umap-learn==0.5.6
-hdbscan==0.8.33
+hdbscan
 scikit-learn==1.5.0
-numpy==1.26.4
 
-# ── Visualization ────────────────────────────────────────────────────────────
+# ── Visualisation ───────────────────────────────────────────────────────────
 plotly==5.22.0
 
 # ── LLM API clients ─────────────────────────────────────────────────────────
-openai==1.30.1          # ChatGPT (GPT-4o, GPT-3.5)
-anthropic==0.28.0       # Claude (claude-3-haiku, claude-3-sonnet)
-google-generativeai==0.5.4  # Gemini (gemini-1.5-flash, gemini-1.5-pro)
+openai==1.30.1                  # Azure OpenAI + standard OpenAI
+anthropic==0.28.0               # Claude
+google-generativeai==0.5.4      # Gemini
 
-# ── Free / local LLM (no token needed) ──────────────────────────────────────
-# huggingface_hub used for Inference API (free tier, no local GPU needed)
-huggingface_hub==0.23.2
-requests==2.32.2
-
-# ── Utilities ────────────────────────────────────────────────────────────────
-tqdm==4.66.4
-python-dotenv==1.0.1
+# ── HuggingFace free Inference API ──────────────────────────────────────────
+requests==2.32.2                # used by HF free backend
